@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Tourist Trap';
+    font-weight: 400; 
+    src: url(../assets/fonts/tourist-trap_[allfont.ru].ttf) format('truetype');
+
+    font-family: 'JI Chunky Caps';
+    font-weight: 400; 
+    src: url(../assets/fonts/ji-chunky-caps_[allfont.ru].ttf) format('truetype');   
+}

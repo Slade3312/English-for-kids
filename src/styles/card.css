@@ -1,0 +1,107 @@
+.card {  
+    position: relative; 
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition: .5s;
+    top: 50%;
+    left: 50%;
+}
+
+.card-inactive {
+    pointer-events: none;
+    opacity: 60%;    
+}
+
+.card .card-front-active {
+    transform: rotateX(-180deg);
+} 
+.card .card-back-active  {
+    transform: rotateX(0deg);
+}  
+.card-front {
+    position: absolute;
+    height: 100%;
+    width: 100%;    
+    background-repeat: no-repeat;    
+    background-size: cover; 
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: .5s;   
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.card-back{
+    position: absolute;
+    height: 100%;
+    width: 100%;    
+    background-size: contain;   
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: .5s;
+    display: flex;
+    align-items: flex-end;
+}
+
+.text-card {
+    color: white;
+    font-family: 'JI Chunky Caps', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: auto;
+
+} 
+
+.footer-card {
+    width: 100%;
+    height: 20%;
+    background-color: rgb(223, 176, 176);
+    display: flex;
+    
+
+}
+
+.rotate {
+    width: 30px;
+    height: 30px;
+    background-image: url('../assets/img/rotate.svg');
+    margin: auto 5px auto 0;
+}
+
+.container-card {    
+}
+
+.button-play {
+    width: 250px;
+    height: 50px;
+    background-color:#7CE700;    
+    margin: 20px auto;
+    font-family: 'JI Chunky Caps', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;    
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer; 
+    border-radius: 25px;   
+}
+
+.button-play:before {
+    content: "Start game";
+}
+
+.play-active:before {
+    content: "Repeat";
+}
+
+.play-active {
+    background-color: #FF7100;
+}
+
+button:active, button:focus {
+    outline: none;
+  }
+    
+
+ 
