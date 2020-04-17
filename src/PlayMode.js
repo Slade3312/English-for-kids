@@ -31,13 +31,13 @@ export default class PlayMode extends ConstructorCards {
     }
 
     playGame(know) {
+        if (this.click > 0 && know === false) {
+            const srcAudio = this.randomCard.audioSrc;
+            this._replay(srcAudio);
         
         if (this.click === 0) {
             this._audioPlay();
         }
-        if (this.click > 0 && know === false) {
-            const srcAudio = this.randomCard.audioSrc;
-            this._replay(srcAudio);
         }
         if (know === true) {
             const word = this.randomCard.word;
