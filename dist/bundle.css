@@ -447,7 +447,7 @@ body {
 table {
   border-collapse: collapse; 
   border: 1px solid grey;
-  margin: auto; 
+  width: 100%;
 }
 
 th {
@@ -456,6 +456,22 @@ th {
 
 td {
   border: 1px solid grey;
+}
+
+.reset-button {
+  width: 100px;
+  height: 30px;
+
+}
+
+.repeat-button {
+  width: 200px;
+  height: 30px;
+}
+
+.wrapper-score {
+  margin: auto;
+  width: 50%;
 }
 
 
